@@ -1,3 +1,7 @@
+#!/usr/bin/env node
+
+'use strict'
+
 const boxen = require("boxen");
 const chalk = require("chalk");
 const inquirer = require("inquirer");
@@ -60,19 +64,19 @@ const data = {
     // handle: chalk.white("@andreferreira-dev"),
     fact: chalk.hex('#f4ad2c')('Transforming coffe to code since 2009!'),
     twitter: chalk.hex('#599300')("https://twitter.com/adnux"),
-    github: chalk.hex('#98d400')("https://github.com/andreferreira"),
+    github: chalk.hex('#98d400')("https://github.com/andreferreira-dev"),
     dev: chalk.hex('#c9eb03')("https://dev.to/adnux"),
     // dribbble: chalk.hex('#499982')("https://dribbble.com/adnux"),
     website: chalk.hex('#d5ed99')("https://andreferreira-dev.github.io"),
     npx: chalk.hex('#A1AB00')("npx andreferreira"),
 
-    labelFact: chalk.hex('#f2e436').bold("          Fun Fact:"),
+    labelFact: chalk.hex('#f2e436').bold("       Fun Fact:"),
     labelTwitter: chalk.hex('#115862').bold("        Twitter:"),
     labelGitHub: chalk.hex('#146470').bold("         GitHub:"),
-    labelDev: chalk.hex('#16717e').bold("           Dev:"),
+    labelDev: chalk.hex('#16717e').bold("            Dev:"),
     // labelDribbble: chalk.hex('#197e8d').bold("       Dribbble:"),
     labelWebsite: chalk.hex('#2f8a98').bold("        Website:"),
-    labelCard: chalk.hex('#bdc44c').bold("                  Card:")
+    labelCard: chalk.hex('#bdc44c').bold("           Card:")
 };
 
 
@@ -106,5 +110,12 @@ const me = boxen(
 
 // Show the boxen
 console.log(me);
+const tip = [
+    `Tip: ${chalk.cyanBright.bold(
+        "cmd/ctrl + click"
+    )} on the links above to open them in your broswer.`,
+    '',
+].join("\n");
+console.log(tip);
 
 prompt(questions).then(answer => answer.action());
