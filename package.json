@@ -4,7 +4,7 @@
     "description": "A personal card for André Luis Ferreira (@andreferreira-dev)",
     "main": "card.js",
     "bin": {
-        "alf": "./card.js"
+        "andreferreira": "./card.js"
     },
     "repository": {
         "type": "git",
