@@ -3,9 +3,7 @@
     "version": "0.0.3",
     "description": "A personal card for André Luis Ferreira (@andreferreira-dev)",
     "main": "card.js",
-    "bin": {
-        "andreferreira": "./card.js"
-    },
+    "bin": "./card.js",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/andreferreira-dev/npx-card.git"
