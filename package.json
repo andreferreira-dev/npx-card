@@ -1,6 +1,6 @@
 {
     "name": "andreferreira",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "A personal card for André Luis Ferreira (@andreferreira-dev)",
     "main": "card.js",
     "bin": "./card.js",
