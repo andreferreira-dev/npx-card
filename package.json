@@ -12,6 +12,7 @@
     },
     "scripts": {
         "dev": "nodemon card.js",
+        "pub": "npm version patch & npm publish",
         "pub-minor": "npm version minor & npm publish",
         "pub-major": "npm version major & npm publish"
     },
