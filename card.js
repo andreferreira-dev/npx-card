@@ -68,6 +68,7 @@ const data = {
     dev: chalk.hex('#c9eb03')("https://dev.to/adnux"),
     // dribbble: chalk.hex('#499982')("https://dribbble.com/adnux"),
     website: chalk.hex('#d5ed99')("https://andreferreira-dev.github.io"),
+    youTube: chalk.hex('#d5ed99')("https://www.youtube.com/@andreferreira.86"),
     npx: chalk.hex('#A1AB00')("npx andreferreira"),
 
     labelFact: chalk.hex('#f2e436').bold("       Fun Fact:"),
@@ -76,6 +77,7 @@ const data = {
     labelDev: chalk.hex('#16717e').bold("            Dev:"),
     // labelDribbble: chalk.hex('#197e8d').bold("       Dribbble:"),
     labelWebsite: chalk.hex('#2f8a98').bold("        Website:"),
+    labelYouTube: chalk.hex('#2f8a98').bold("        YouTube:"),
     labelCard: chalk.hex('#bdc44c').bold("           Card:")
 };
 
@@ -86,11 +88,12 @@ const me = boxen(
         ``,
         `${data.labelFact}  ${data.fact}`,
         ``,
-        `${data.labelTwitter}  ${data.twitter}`,
         `${data.labelGitHub}  ${data.github}`,
+        `${data.labelTwitter}  ${data.twitter}`,
         `${data.labelDev}  ${data.dev}`,
         // `${data.labelDribbble}  ${data.dribbble}`,
-        `${data.labelWebsite}  ${data.website}`,
+        // `${data.labelWebsite}  ${data.website}`,
+        `${data.labelYouTube}  ${data.youTube}`,
         ``,
         `${data.labelCard}  ${data.npx}`,
         ``,
